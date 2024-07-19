@@ -1,0 +1,52 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Izikie | Projects">
+	<main>
+		<h1>Welcome to <span class="text-gradient">My Projects</span></h1>
+		<ul role="list" class="link-card-grid">
+			<Card
+				id = "personal-website"
+				name = "Personal Site (This)"
+				description = "Personal site with a portfolio and details about me."
+			/>
+			<Card
+				id = "scriptthinglol"
+				name = "Linux Hardening Script"
+				description = "Script designed to secure linux. Created for cyberpatriot competition."
+			/>
+			<Card
+				id = "steamcmd-gui"
+				name = "SteamCMD GUI"
+				description = "A simple gui layer ontop of steamcmd. Designed to make it easier to use."
+			/>
+		</ul>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	h1 {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 2rem;
+		padding: 0;
+	}
+</style>

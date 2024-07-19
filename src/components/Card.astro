@@ -1,24 +1,25 @@
 ---
 interface Props {
-	title: string;
-	body: string;
-	href: string;
+	id: string;
+	name: string;
+	description: string;
 }
 
-const { href, title, body } = Astro.props;
+const { id, name, description } = Astro.props;
+const url = `https://github.com/Izikie/${id}`;
 ---
 
 <li class="link-card">
-	<a href={href}>
+	<a href={url}>
+		<img src=`projects/${id}.png`>
 		<h2>
-			{title}
+			{name}
 			<span>&rarr;</span>
 		</h2>
-		<p>
-			{body}
-		</p>
+		<p>{description}</p>
 	</a>
 </li>
+
 <style>
 	.link-card {
 		list-style: none;
