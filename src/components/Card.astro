@@ -13,8 +13,8 @@ const url = `https://github.com/Izikie/${id}`;
 <li class="link-card">
 	<a href={url}>
 		<img src=`projects/${id}.${extension}` width="320", height="270">
-		<h2>{name}</h2>
-		<p>{description}</p>
+		<h2 class="font-5xl font-bold text-white">{name}</h2>
+		<p class="mt-2">{description}</p>
 	</a>
 </li>
 
@@ -47,13 +47,7 @@ const url = `https://github.com/Izikie/${id}`;
 		border-radius: 8px;
 	}
 	h2 {
-		margin: 0;
-		font-size: 1.25rem;
 		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-	}
-	p {
-		margin-top: 0.5rem;
-		margin-bottom: 0;
 	}
 	.link-card:is(:hover, :focus-within) {
 		scale: 1.02;
@@ -62,8 +56,5 @@ const url = `https://github.com/Izikie/${id}`;
 	}
 	.link-card:is(:hover, :focus-within) h2 {
 		color: rgb(var(--accent-light));
-	}
-	.link-cardis(:active) {
-		scale: 0.98;
 	}
 </style>
