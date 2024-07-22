@@ -1,0 +1,53 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="About Me">
+    <main>
+        <h1 class="text-6xl font-bold mb-8 text-center">About <span class="text-gradient">Me</span></h1>
+        <div class="space-y-12">
+			<section>
+                <h2 class="text-4xl font-bold">Identity</h2>
+                <p>I'm a 16-year-old high school student with interests in computer science and cyber security. As a self-taught coder, I've been programming for several years. I am transgender (Male to Female), use she/her pronouns, and identify as lesbian. Besides coding, I have a strong passion for music and video games, enjoying them whenever possible.</p>
+			</section>
+
+            <section>
+                <h2 class="text-4xl font-bold">Music</h2>
+                <p>I enjoy listening to music and attending concerts whenever possible. Below are some of the major genres I listen to.</p>
+
+                <h3 class="text-2xl font-semibold">Genres</h3>
+                <ul class="mt-1 text-baselist-outside list-disc pl-5">
+                    <li><a href="">Breakcore</a></li>
+                    <li><a href="">Drum and Bass (DnB)</a></li>
+                    <li><a href="">House</a></li>
+                    <li><a href="">Trance</a></li>
+                    <li><a href="">Rap</a></li>
+                    <li><a href="">Alt Rock</a></li>
+                    <li><a href="">Hip Hop</a></li>
+                    <li><a href="">Trap Metal</a></li>
+                </ul>
+                <p class="mt-2">...and many more</p>
+            </section>
+
+            <section>
+                <h2 class="text-4xl font-bold">Work</h2>
+                <p>Currently, my only job experience comes from an IT Summer Internship at my high school.</p>
+            </section>
+        </div>
+    </main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	.link-card-grid {
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+	}
+</style>
