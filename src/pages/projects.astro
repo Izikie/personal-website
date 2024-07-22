@@ -5,18 +5,20 @@ import Card from '../components/Card.astro';
 
 <Layout title="Projects">
 	<main>
-		<h1 class="text-7xl font-bold mb-8 text-center">Welcome to <span class="text-gradient">My Projects</span></h1>
+		<h1 class="text-7xl font-bold mb-8 text-center">My <span class="text-gradient">Projects</span></h1>
 		<ul role="list" class="grid gap-4 link-card-grid">
 			<Card
 				id = "personal-website"
 				name = "Personal Site (This)"
 				description = "Personal site with a portfolio and details about me."
 				extension = "svg"
+				techStack={["Astro", "HTML", "CSS", "TypeScript"]}
 			/>
 			<Card
 				id = "scriptthinglol"
 				name = "Linux Hardening Script"
 				description = "Script designed to secure linux. Created for cyberpatriot competition."
+				techStack={["Bash", "Python"]}
 			/>
 			<Card
 				id = "steamcmd-gui"
